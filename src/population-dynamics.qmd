@@ -115,9 +115,9 @@ We begin by computing *crude birth rate* (CBR) for a given
 
 ```{r create_py}
 # Create new variable py = total person years for each data set
-world_data$py <- world_data$py.men + world_data$py.women
-kenya_data$py <- kenya_data$py.men + kenya_data$py.women
-sweden_data$py <- sweden_data$py.men + sweden_data$py.women
+world_data$py  <- world_data$py.men  +  world_data$py.women
+kenya_data$py  <- kenya_data$py.men  +  kenya_data$py.women
+sweden_data$py <- sweden_data$py.men +  sweden_data$py.women
 ```
 
 
@@ -287,8 +287,8 @@ compute_cdr <- function(population_data) {
 (sweden_cdr <- compute_cdr(sweden_data))
 
 # compute the ratio of CDR between the two periods
-world_cdr[2] / world_cdr[1]
-kenya_cdr[2] / kenya_cdr[1]
+world_cdr[2]  / world_cdr[1]
+kenya_cdr[2]  / kenya_cdr[1]
 sweden_cdr[2] / sweden_cdr[1]
 ```
 
@@ -375,8 +375,8 @@ compute_pop_prop <- function(pop_data) {
 
 ```{r compute_cfcdr}
 # Compute population proportion for each data set
-world_data <- compute_pop_prop(world_data)
-kenya_data <- compute_pop_prop(kenya_data)
+world_data  <- compute_pop_prop(world_data)
+kenya_data  <- compute_pop_prop(kenya_data)
 sweden_data <- compute_pop_prop(sweden_data)
 
 # Compute Kenyas CDR Kenya had Sweden's population distribution
