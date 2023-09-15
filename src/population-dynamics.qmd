@@ -270,6 +270,8 @@ Next, we will examine another important demographic process:
   Briefly describe patterns you observe in the resulting CDRs.
 
 
+### Answer 4
+
 ```{r cdr_function}
 # Function to compute the Crude death rate (CDR)
 compute_cdr <- function(population_data) {
@@ -315,6 +317,7 @@ One puzzling finding from the previous question is that the CDR
   pattern you observe.
  
 
+### Answer 5
 
 ```{r asdr_function}
 # Function to compute Age specific death rate (ASDR)
@@ -361,7 +364,7 @@ One way to understand the difference in the CDR between Kenya
 
 
 
-
+### Answer 6
 
 ```{r pop_prop_function}
 # Function to compute population proportion by period
