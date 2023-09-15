@@ -368,7 +368,7 @@ One way to understand the difference in the CDR between Kenya
 compute_pop_prop <- function(pop_data) {
   pop_data %>% 
     group_by(period) %>%
-    mutate(popP = py / sum(py)) %>%
+    mutate(pop_prop = py / sum(py)) %>%
     ungroup()
   }
 ```
