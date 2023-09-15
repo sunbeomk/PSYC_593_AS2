@@ -1,0 +1,8 @@
+TODO
+
+1. Add extra spaces to align operators and objects within blocks of codes. 
+
+2. Change the variable name `popP` to `pop_prop` in the `compute_pop_prop()` function.
+
+3. Add headers for the answers to the last three questions.
+
